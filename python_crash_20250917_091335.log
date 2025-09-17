@@ -1,0 +1,24 @@
+[python_crash_20250917_091335.log - Protected by Curtain-eLocker]
+
+程式異常 (程式碼: 0x0000000000000003 - 程式由 Anaconda, Inc. 包裝)
+程式異常: 2025-09-17 09:13:35.945654
+Python 版本: 3.11.3 | packaged by Anaconda, Inc. | (main, Apr 19 2023, 23:46:34) [MSC v.1916 64 bit (AMD64)]
+
+Windows fatal exception: code 0x80000003
+
+Current thread 0x00000090 (most recent call first):
+  File "C:\ProgramData\anaconda3\Lib\contextlib.py", line 144 in _exit__
+  File "C:\ProgramData\anaconda3\Lib\site-packages\watchdog\observers\winapi.py", line 293 in safe_load_workbook
+  File "C:\ProgramData\anaconda3\Lib\site-packages\watchdog\observers\winapi.py", line 378 in dump_excel_cells_with_timeout
+  File "C:\ProgramData\anaconda3\Lib\site-packages\watchdog\observers\winapi.py", line 314 in compile_excel_changes
+  File "C:\ProgramData\anaconda3\Lib\site-packages\watchdog\events.py", line 410 in unmodified
+  File "C:\ProgramData\anaconda3\Lib\site-packages\watchdog\observers\api.py", line 272 in dispatch_events
+  File "C:\ProgramData\anaconda3\Lib\site-packages\watchdog\observers\api.py", line 372 in dispatch_events
+  File "C:\ProgramData\anaconda3\Lib\site-packages\watchdog\observers\winapi.py", line 199 in run
+  File "C:\ProgramData\anaconda3\Lib\threading.py", line 1038 in _bootstrap_inner
+Thread 0x000003ac (most recent call first):
+  File "C:\ProgramData\anaconda3\Lib\site-packages\watchdog\observers\winapi.py", line 330 in read_directory_changes
+  File "C:\ProgramData\anaconda3\Lib\site-packages\watchdog\observers\winapi.py", line 391 in read_events
+  File "C:\ProgramData\anaconda3\Lib\site-packages\watchdog\observers\api.py", line 199 in queue_events
+  File "C:\ProgramData\anaconda3\Lib\site-packages\watchdog\observers\api.py", line 148 in run
+  File "C:\ProgramData\anaconda3\Lib\threading.py", line 1038 in _bootstrap_inner
