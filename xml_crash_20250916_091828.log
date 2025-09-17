@@ -1,0 +1,18 @@
+xml_crash_20250916_091828.log - 記錄本 - (Protected by Curtain e-locker)
+
+檔案(F)  編輯(E)  檢視(O)  檢視(V)  說明(H)
+
+XML  千進程調測 報告
+
+時間: 2025-09-16 09:18:28
+檔案: read_values
+檔案路徑: D:\Pzone\watchdog\cache_folder\cf500d5901e3_Session_2025-07-03_16-05-35.xlxs
+設定: max_workers=1, timeout=120.0s
+
+錯誤報告:
+
+錯誤 1: TypeError
+訊息: the JSON object must be str, bytes or bytearray, not NoneType
+
+錯誤 2: TypeError
+訊息: the JSON object must be str, bytes or bytearray, not NoneType
