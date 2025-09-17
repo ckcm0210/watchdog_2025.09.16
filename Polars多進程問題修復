@@ -1,0 +1,15 @@
+Polars多進程問題修復
+根據搜尋結果，polars在多進程環境下有已知問題：
+
+python
+import multiprocessing
+
+# 在程式開始時設定正確的啟動方法
+if __name__ == '__main__':
+    # 避免polars的fork問題
+    multiprocessing.set_start_method('spawn', force=True)
+    
+    # 或者檢查並警告
+    if multiprocessing.get_start_method() != 'spawn':
+        print("警告：polars建議使用spawn啟動方法")
+        multiprocessing.set_start_method('spawn', force=True)
